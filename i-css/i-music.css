@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+*{
+    font-family: 'poppins' ,sans-serif;
+}
+body {
+    background-color: #dfe7ef;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-family: Poppins, sans-serif;
+
+}
+.player {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    user-select: none;
+
+}
+.player .player-track {
+   background: rgba( 8, 8, 8, 0.5 );
+
+backdrop-filter: blur( 15px );
+-webkit-backdrop-filter: blur( 15px );
+
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    top: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 15px 15px 1px 20px;
+    border-radius: 20px 20px 0px 0px;
+}
+.player .player-track .active {
+    top: -100px;
+}
+.player .player-track .time {
+    font-size: 16px;
+    margin: 5px 0px 20px;
+    height: 6px;
+    color: #b3b3b3; /* secondary text color */
+}
+.player .player-track .progress-bar {
+    background-color: hsla(0, 0%, 100%, 0.3);
+    border-radius: 20px;
+}
+.player .player-track .progress-bar .fillBar {
+    width: 0;
+    height: 6px;
+    border-radius: 20px;
+}
+.player .player-track .artist-name {
+    color: #ffffff; /* primary text color */
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.player .player-track .music-name {
+    color: #b3b3b3; /* secondary text color */
+    font-size: 0.85em;
+    margin-bottom: 10px;
+}
+.player .player-control {
+ 
+    width: 300px;
+    height: 69px;
+    border-radius: 20px;
+    text-align: center;
+    background: rgba( 6, 6, 6, 0.7 );
+
+backdrop-filter: blur( 15px );
+-webkit-backdrop-filter: blur( 15px );
+
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+
+}
+.player .player-control #play {
+    border-radius: 50%;
+}
+.player .player-control i {
+    padding: 30px 8px;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.play-btn:before {
+    border-radius: 500px;
+    color: #ffffff;
+    background: rgba( 255, 255, 255, 0.6 );
+
+backdrop-filter: blur( 2px );
+-webkit-backdrop-filter: blur( 2px );
+
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px 10px 10px 12px;
+}
+.play-btn:hover:before {
+    filter: brightness(1.08) saturate(1.03);
+    box-shadow: 0 1px #222222;
+}
+.pause-btn:before {
+    border-radius: 500px;
+    color: #ffffff;
+    background-color: #3f3f3f;
+    padding: 10px 12px 10px 12px;
+}
+.pause-btn:hover:before {
+    filter: brightness(1.08);
+    
+}
+.next-btn:before {
+    color: rgb(179, 179, 179);
+}
+.next-btn:hover:before {
+    color: #fff;
+}
+.prev-btn:before {
+    color: rgb(179, 179, 179);
+}
+.prev-btn:hover:before {
+    color: #fff;
+}
